@@ -1,1 +1,89 @@
+Banking Data Analysis Project
+📌 Project Overview
+This project focuses on analyzing banking customer data to understand customer characteristics, financial behavior, and factors that influence customers' responses to a banking marketing campaign.
 
+The analysis was performed using SQL to clean, explore, aggregate, and analyze the data and generate meaningful business insights.
+
+📂 Dataset
+Dataset: bank_project.csv
+Records: 11,161
+Columns: 17
+Domain: Banking / Financial Services
+Analysis Tool: SQL
+🎯 Project Objectives
+The main objectives of this project are:
+
+🔍 Explore and understand customer data
+🧹 Identify and handle data-quality issues
+👥 Analyze customers based on age, job, marital status, and education
+💰 Analyze account balance and financial characteristics
+📊 Study customer responses to marketing campaigns
+📈 Identify patterns and trends in customer behavior
+💡 Generate useful business insights from the data
+🛠️ Tools & Technologies
+SQL
+MySQL / SQL Server
+Excel / CSV
+GitHub
+🔎 Key Analysis Areas
+👤 Customer Analysis
+Customer distribution by age
+Customers by job type
+Marital-status analysis
+Education-level analysis
+Housing and personal-loan analysis
+💰 Financial Analysis
+Account balance analysis
+Average balance by customer segment
+Customers with positive and negative balances
+Financial behavior across different customer groups
+📞 Campaign Analysis
+Number of contacts made during campaigns
+Previous campaign contact analysis
+Campaign outcome analysis
+Customer subscription/response analysis
+📊 Business Insights
+The analysis helps identify:
+
+Customer segments with higher campaign responses
+Customer characteristics associated with successful campaigns
+Differences in financial behavior across customer groups
+Potential target segments for future marketing campaigns
+💡 Sample SQL Analysis
+-- Total number of customers
+SELECT COUNT(*) AS total_customers
+FROM bank_project;
+
+-- Average account balance
+SELECT AVG(balance) AS average_balance
+FROM bank_project;
+
+-- Customers by job
+SELECT job, COUNT(*) AS customer_count
+FROM bank_project
+GROUP BY job
+ORDER BY customer_count DESC;
+
+-- Customer response analysis
+SELECT y, COUNT(*) AS customer_count
+FROM bank_project
+GROUP BY y;
+📈 Project Outcome
+This project demonstrates how SQL can be used to transform raw banking data into meaningful business information.
+
+The analysis provides insights into customer demographics, financial behavior, campaign performance, and customer responses, which can support better customer segmentation and data-driven marketing decisions.
+
+🚀 Skills Demonstrated
+SQL Data Analysis
+Data Cleaning
+Data Exploration
+Filtering using WHERE
+Aggregation using GROUP BY
+Sorting using ORDER BY
+Aggregate Functions
+Conditional Analysis
+Business Insights
+Customer Segmentation
+Data-Driven Decision Making
+👨‍💻 Project Author
+Anirudha Parida
